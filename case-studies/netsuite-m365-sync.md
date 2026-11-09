@@ -1,6 +1,6 @@
 # Case Study: NetSuite ↔ Microsoft 365 Two-Way Sync
 
-**C-Suite Pro Connect** · Built at Canyon Rim Consulting · Sept–Oct 2026
+Built at Canyon Rim Consulting · Sept–Oct 2026  
 **Role:** Sole developer: requirements, architecture, implementation, live testing
 **Stack:** Node.js, Express, PostgreSQL / Sequelize, Microsoft Graph (app-only + change notifications), MSAL, NetSuite SuiteScript 2.x, NetSuite REST + OAuth 2.0 M2M, Mocha
 
@@ -110,6 +110,33 @@ verify the actual end state with a follow-up API query instead of trusting a `20
   a planned integration with the company's main product platform.
 - Documentation written alongside the code: architecture in plain language, a runbook, and
   incident write-ups.
+
+## Phase 2: from prototype to a multi-tenant platform feature (Oct 2026)
+
+After the demos I wrote the **integration plan** for folding the service into the company's
+main platform. It went through review with the lead backend developer, and I folded his
+amendments into a second revision. I then delivered it as a **planned series of 8 reviewed
+pull requests**, each small enough to review on its own:
+
+1. License-gated feature flag, data model, and retention sweep for sync logs
+2. Graph client port with **multi-tenant** app-only auth and a **per-mailbox request queue**
+3. NetSuite service on the platform's shared client, plus a mailbox resolver
+4. Sync handlers, a **durable webhook inbox and worker** ("never send a message twice"), and a **per-tenant circuit breaker** with alerting
+5. Graph subscription lifecycle job, and an admin API for setup, mappings, health and the breaker
+6. The NetSuite script moved into a proper **SDF project**, so deployments match the repo
+7. **Admin UI: mailbox mapping page**, NetSuite employee ↔ Microsoft 365 mailbox
+8. **Admin UI: connection setup tab and sync-health card**
+
+The **first live test** in the platform turned up real gaps, and I fixed each with tests:
+- A logged reply showed the integration account as sender instead of the real person.
+- An unlicensed tenant looked healthy.
+- Answering "why didn't this sync?" took a database query.
+
+I added a **"why sync is blocked" banner** that names the exact reason (not licensed, no
+Microsoft consent, missing config…), a recent-activity view for admins, visible setup
+errors, and the admin-consent return page. I also wrote the **customer onboarding runbook**,
+a **Microsoft app setup guide** (multi-tenant app, certificate auth, Exchange RBAC mailbox
+scoping), and a **QC test plan** for staging.
 
 ## What I'd do differently
 

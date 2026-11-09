@@ -1,6 +1,6 @@
-# Case Study: Pulse, a Desktop Time-Capture App
+# Case Study: Desktop Time-Capture App
 
-**Pulse Companion** · Built at Canyon Rim Consulting · Sept 2026 · 13 releases (v0.1 → v0.2.3) in two weeks
+Built at Canyon Rim Consulting · Sept 2026 · 13 releases (v0.1 → v0.2.3) in two weeks  
 **Role:** Sole developer: desktop client, release pipeline, server API contract
 **Stack:** Tauri 2, Rust (`reqwest`, macOS Keychain, Core Graphics idle APIs), HTML/CSS/JS, GitHub Actions, Ed25519-signed auto-updates
 
@@ -28,7 +28,7 @@ prompt is due. The app polls, reacts, and reports.
 
 ```mermaid
 sequenceDiagram
-    participant App as Pulse (menu bar)
+    participant App as Menu-bar app
     participant API as ITSM server
     App->>API: ping (hourly): config, holidays, min version, update check
     loop every 60 s

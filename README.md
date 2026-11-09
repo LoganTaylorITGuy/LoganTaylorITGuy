@@ -11,8 +11,9 @@ Most of my development work lives in private company repos, so here's what I've 
 | **[MSP Operations Dashboard](https://github.com/LoganTaylorITGuy/msp-ops-dashboard)** · [**▶ live demo**](https://logantayloritguy.github.io/msp-ops-dashboard/) | React + TypeScript + Tailwind dashboard with hand-built accessible SVG charts. axe-tested in a real browser (light/dark, desktop/phone), deployed by CI. | Open source |
 | **[M365 Admin Toolkit](https://github.com/LoganTaylorITGuy/m365-admin-toolkit)** | PowerShell + Microsoft Graph module for offboarding, stale-account audit, MFA risk, and license waste. 30 Pester tests, CI. | Open source |
 | **[SharePoint Report Publisher](https://github.com/LoganTaylorITGuy/sharepoint-report-publisher)** | Python CLI that turns a time-tracking export into a weekly effort report and publishes it to SharePoint via Graph, with least-privilege `Sites.Selected` auth. 63 tests, strict typing, CI. | Open source |
-| **[NetSuite ↔ Microsoft 365 Sync](case-studies/netsuite-m365-sync.md)** | Two-way email and calendar sync middleware (Node, Graph change notifications, NetSuite OAuth 2.0). Includes five real incidents I debugged. | Case study |
-| **[Pulse: Desktop Time Capture](case-studies/pulse-desktop-time-capture.md)** | Menu-bar macOS app (Tauri / Rust) with idle detection, offline queue, Keychain pairing, and signed auto-updates. 13 releases in two weeks. | Case study |
+| **[Front-End Modernization of a Production Platform](case-studies/erp-frontend-modernization.md)** | Replaced a left sidebar with bottom navigation + Cmd/Ctrl+K command palette, brand/theme overhaul, Liquid Glass launcher, single-row header, in-app help hub, and a CPQ UX audit. 17 merged PRs in React/TypeScript. | Case study |
+| **[NetSuite ↔ Microsoft 365 Sync](case-studies/netsuite-m365-sync.md)** | Two-way email and calendar sync: prototype, then a multi-tenant platform feature shipped as 8 reviewed PRs with admin UI. Includes five real incidents I debugged. | Case study |
+| **[Desktop Time-Capture App](case-studies/desktop-time-capture.md)** | Menu-bar macOS app (Tauri / Rust) with idle detection, offline queue, Keychain pairing, and signed auto-updates. 13 releases in two weeks. | Case study |
 
 ## What I've built
 
@@ -31,8 +32,9 @@ Most of my development work lives in private company repos, so here's what I've 
 - SharePoint phishing hunter script and Microsoft 365 identity and offboarding SOPs
 
 **Desktop and front end** (Rust / Tauri, HTML/CSS/JS, React, Tailwind)
+- Front-end modernization of a production React/TypeScript business platform: bottom-bar navigation and command palette, theme, launcher, header, help hub and configurator UX ([case study](case-studies/erp-frontend-modernization.md))
 - Accessible operations dashboard with hand-built SVG charts, keyboard navigation and table views ([live demo](https://logantayloritguy.github.io/msp-ops-dashboard/))
-- macOS menu-bar time-capture client with signed auto-updates and a CI release pipeline ([case study](case-studies/pulse-desktop-time-capture.md))
+- macOS menu-bar time-capture client with signed auto-updates and a CI release pipeline ([case study](case-studies/desktop-time-capture.md))
 - NetSuite ↔ Outlook two-way sync middleware ([case study](case-studies/netsuite-m365-sync.md))
 
 ## Tools I work with
