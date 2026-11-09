@@ -9,6 +9,7 @@ Most of my development work lives in private company repos, so here's what I've 
 | Project | What it is | |
 |---|---|---|
 | **[M365 Admin Toolkit](https://github.com/LoganTaylorITGuy/m365-admin-toolkit)** | PowerShell + Microsoft Graph module for offboarding, stale-account audit, MFA risk, and license waste. 30 Pester tests, CI. | Open source |
+| **[SharePoint Report Publisher](https://github.com/LoganTaylorITGuy/sharepoint-report-publisher)** | Python CLI that turns a time-tracking export into a weekly effort report and publishes it to SharePoint via Graph, with least-privilege `Sites.Selected` auth. 63 tests, strict typing, CI. | Open source |
 | **[NetSuite ↔ Microsoft 365 Sync](case-studies/netsuite-m365-sync.md)** | Two-way email and calendar sync middleware (Node, Graph change notifications, NetSuite OAuth 2.0). Includes five real incidents I debugged. | Case study |
 | **[Pulse: Desktop Time Capture](case-studies/pulse-desktop-time-capture.md)** | Menu-bar macOS app (Tauri / Rust) with idle detection, offline queue, Keychain pairing, and signed auto-updates. 13 releases in two weeks. | Case study |
 
@@ -18,7 +19,7 @@ Most of my development work lives in private company repos, so here's what I've 
 - Ticketing, timekeeping, and agile dev-cycle tracking for a managed services team
 - Integrations with QuickBooks Online, Microsoft Graph/SharePoint, GitHub, Ubiquiti UniFi, and Motive
 - RMM abstraction layer with swappable vendor adapters
-- Automated weekly reporting to SharePoint via an Azure App Registration and the Graph API
+- Automated weekly reporting to SharePoint via an Azure App Registration and the Graph API ([open-source version](https://github.com/LoganTaylorITGuy/sharepoint-report-publisher))
 - pytest suite at 80% coverage, run in GitHub Actions CI
 
 **NetSuite development** (SuiteScript, SDF / SuiteCloud CLI, SuiteTalk REST)
