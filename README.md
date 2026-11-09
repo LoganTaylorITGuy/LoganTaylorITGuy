@@ -42,5 +42,5 @@ CompTIA Security+, Network+, A+ · ISC2 Certified in Cybersecurity (CC)
 
 ## Get in touch
 
-Open to IT infrastructure, systems, and developer roles, remote or in the Amarillo area.
+Open to IT infrastructure, systems, and developer roles, remote or in the Amarillo / Hereford area.
 [LinkedIn](https://www.linkedin.com/in/logantheitguy/)
