@@ -4,6 +4,14 @@ IT infrastructure and security pro with 12+ years in IT who builds the tools his
 
 Most of my development work lives in private company repos, so here's what I've been building.
 
+## Featured
+
+| Project | What it is | |
+|---|---|---|
+| **[M365 Admin Toolkit](https://github.com/LoganTaylorITGuy/m365-admin-toolkit)** | PowerShell + Microsoft Graph module for offboarding, stale-account audit, MFA risk, and license waste. 30 Pester tests, CI. | Open source |
+| **[NetSuite ↔ Microsoft 365 Sync](case-studies/netsuite-m365-sync.md)** | Two-way email and calendar sync middleware (Node, Graph change notifications, NetSuite OAuth 2.0). Includes five real incidents I debugged. | Case study |
+| **[Pulse: Desktop Time Capture](case-studies/pulse-desktop-time-capture.md)** | Menu-bar macOS app (Tauri / Rust) with idle detection, offline queue, Keychain pairing, and signed auto-updates. 13 releases in two weeks. | Case study |
+
 ## What I've built
 
 **Internal operations platform** (Python, Flask, SQLAlchemy, Gunicorn, Jinja)
@@ -20,12 +28,13 @@ Most of my development work lives in private company repos, so here's what I've 
 **Security automation** (PowerShell)
 - SharePoint phishing hunter script and Microsoft 365 identity and offboarding SOPs
 
-**Front end** (React, Tailwind)
-- Client-facing web projects built with AI-assisted development
+**Desktop and front end** (Rust / Tauri, HTML/CSS/JS, React, Tailwind)
+- macOS menu-bar time-capture client with signed auto-updates and a CI release pipeline ([case study](case-studies/pulse-desktop-time-capture.md))
+- NetSuite ↔ Outlook two-way sync middleware ([case study](case-studies/netsuite-m365-sync.md))
 
 ## Tools I work with
 
-`Python` `Flask` `SQLAlchemy` `PowerShell` `Power Automate` `NetSuite SuiteScript` `React` `Tailwind` `Microsoft Graph` `Intune` `Entra ID` `GitHub Actions`
+`Python` `Flask` `SQLAlchemy` `PowerShell` `Power Automate` `NetSuite SuiteScript` `Node.js` `Rust` `Tauri` `React` `Tailwind` `Microsoft Graph` `Intune` `Entra ID` `GitHub Actions`
 
 ## Certifications
 
