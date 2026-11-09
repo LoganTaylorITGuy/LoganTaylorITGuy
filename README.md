@@ -1,6 +1,6 @@
 # Hi, I'm Logan 👋
 
-IT infrastructure and security pro with 12+ years in IT who builds the tools his team runs on. Based in Hereford, Texas. U.S. Marine Corps veteran.
+IT infrastructure and security pro with 12+ years in IT and 15+ years in leadership, who builds the tools his team runs on. Based in the Texas Panhandle (Amarillo / Hereford). U.S. Marine Corps veteran.
 
 Most of my development work lives in private company repos, so here's what I've been building.
 
